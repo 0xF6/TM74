@@ -84,3 +84,9 @@ void setup()
 
 
 `/examples/time_display.ino` - with using RTC module displaying current time on current display
+
+
+
+##### Tested on   
+`Arduino Due`   
+`Arduino Leonardo R3`   
