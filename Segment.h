@@ -6,8 +6,7 @@
 typedef uint8_t u2_t;
 #define FALSE 0
 #define TRUE  1
-#define INVALID_SEGMENT 0b00110110
-
+#define INVALID_SEGMENT ((unsigned char)0b00110110)
 struct Segment{
 	public:
 		Segment(uint8_t number) 
