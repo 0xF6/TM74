@@ -15,7 +15,7 @@ class TM74
 	void clear();
   protected:
     void reset();
-    void relock(const uint8_t flag = 0x1);
+    void relock(const uint8_t flag);
 
 	int _pinRCLK;
 	int _pinDIO;

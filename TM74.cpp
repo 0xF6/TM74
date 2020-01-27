@@ -21,7 +21,7 @@ TM74::TM74(int pinSCLK, int pinRCLK, int pinDIO)
   reset();
 }
 
-void TM74::relock(const uint8_t flag = 0x1)
+void TM74::relock(const uint8_t flag)
 {
   int targetPin = 0;
 
@@ -40,7 +40,7 @@ void TM74::write(unsigned char ref)
     else  
       digitalWrite(_pinDIO, LOW);
     ref <<= 1;
-    relock();
+    relock(0x1);
     if (digitalRead(_pinDIO) == 0)
       pinMode(_pinDIO, HIGH);
   }
