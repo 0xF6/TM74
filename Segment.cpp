@@ -1,6 +1,6 @@
-#include "./Segment.h"
+#include "Segment.h"
 #include <Arduino.h>
-const unsigned char digitToSegment[18] = {
+const unsigned char digitToSegment[19] = {
     0b11000000, // 0
     0b11111001, // 1
     0b10100100, // 2
@@ -18,11 +18,12 @@ const unsigned char digitToSegment[18] = {
     0b10000110, // E
     0b10001110, // f
     0b10011100, // ° (degree)
-    0b10111111, // - (minus)
+    0b10111111, // - (minus),
+    INVALID_SEGMENT  // INVALID_SEGMENT 
 };
-const char digitToChar[18] = {
+const char digitToChar[19] = {
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
-    'a', 'b', 'c', 'd', 'e', 'f', '\xb0', '-'
+    'a', 'b', 'c', 'd', 'e', 'f', '\xb0', '-', '#'
 };
 
 
