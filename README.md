@@ -90,6 +90,6 @@ void setup()
 ##### Tested on   
 `Arduino Due`   
 `Arduino Leonardo R3`   
-`Arduino Uno`
-`Arduino nano`
-`Iskra nano pro`
+`Arduino Uno` 
+`Arduino nano`  
+`Iskra nano pro`  
