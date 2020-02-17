@@ -56,7 +56,7 @@ TM74 disp(SCLK, RCLK, DIO);
 const uint8_t useDot = 0x1;
 
 
-void setup() 
+void loop() 
 { 
     // fill segment data
     const Segment segs[4] = {
